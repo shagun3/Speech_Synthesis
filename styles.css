@@ -1,0 +1,94 @@
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #3BC1AC;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+
+  background-image:
+  radial-gradient(circle at 100% 150%, #FFDAB9 24%, #FF69B4 25%, #FF69B4 28%, #FFDAB9 29%, #FFDAB9 36%, #FF69B4 36%, #FF69B4 40%, transparent 40%, transparent),
+  radial-gradient(circle at 0    150%, #FFDAB9 24%, #FF69B4 25%, #FF69B4 28%, #FFDAB9 29%, #FFDAB9 36%, #FF69B4 36%, #FF69B4 40%, transparent 40%, transparent),
+  radial-gradient(circle at 50%  100%, #FF69B4 10%, #FFDAB9 11%, #FFDAB9 23%, #FF69B4 24%, #FF69B4 30%, #FFDAB9 31%, #FFDAB9 43%, #FF69B4 44%, #FF69B4 50%, #FFDAB9 51%, #FFDAB9 63%, #FF69B4 64%, #FF69B4 71%, transparent 71%, transparent),
+  radial-gradient(circle at 100% 50%, #FF69B4 5%, #FFDAB9 6%, #FFDAB9 15%, #FF69B4 16%, #FF69B4 20%, #FFDAB9 21%, #FFDAB9 30%, #FF69B4 31%, #FF69B4 35%, #FFDAB9 36%, #FFDAB9 45%, #FF69B4 46%, #FF69B4 49%, transparent 50%, transparent),
+  radial-gradient(circle at 0    50%, #FF69B4 5%, #FFDAB9 6%, #FFDAB9 15%, #FF69B4 16%, #FF69B4 20%, #FFDAB9 21%, #FFDAB9 30%, #FF69B4 31%, #FF69B4 35%, #FFDAB9 36%, #FFDAB9 45%, #FF69B4 46%, #FF69B4 49%, transparent 50%, transparent);
+  background-size:100px 50px;
+}
+
+.voiceinator {
+  padding: 2rem;
+  width: 50rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  position: relative;
+  background: white;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+  width: calc(100% + 4rem);
+  margin: -2rem 0 2rem -2rem;
+  padding: .5rem;
+  background: #DDA0DD;
+  border-bottom: 5px solid #BA55D3;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 100;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 3px 3px 0 #BA55D3;
+}
+
+.voiceinator input,
+.voiceinator button,
+.voiceinator select,
+.voiceinator textarea {
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border: 0;
+  font-size: 2rem;
+  background: #F7F7F7;
+  outline: 0;
+}
+
+textarea {
+  height: 20rem;
+}
+
+input[type="select"] {
+
+}
+
+.voiceinator button {
+  background: #DDA0DD;
+  border: 0;
+  width: 49%;
+  float: left;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 0;
+  font-size: 2rem;
+  border-bottom: 5px solid #BA55D3;
+  cursor: pointer;
+  position: relative;
+}
+
+.voiceinator button:active {
+  top: 2px;
+}
+
+.voiceinator button:nth-of-type(1) {
+  margin-right: 2%;
+}
